@@ -1,0 +1,14 @@
+poc-site-initializer:
+    name: POC Site Initializer
+    oAuthApplicationHeadlessServer: poc-site-initializer-oauth-application-headless-server
+    siteExternalReferenceCode: POC
+    siteName: POC
+    type: siteInitializer
+poc-site-initializer-oauth-application-headless-server:
+    .serviceAddress: localhost:8080
+    .serviceScheme: http
+    name: POC OAuth Application Headless Server
+    scopes:
+        - Liferay.Headless.Site.everything
+        - Liferay.Headless.Admin.User.everything
+    type: oAuthApplicationHeadlessServer
